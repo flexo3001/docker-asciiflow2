@@ -6,7 +6,6 @@ WORKDIR /asciiflow2
 
 RUN ./compile.sh
 
-
 FROM nginx:alpine
 
 COPY --from=build /asciiflow2 /usr/share/nginx/html
